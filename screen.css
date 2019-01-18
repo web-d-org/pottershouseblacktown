@@ -118,8 +118,9 @@ header img{
 #About-us{
  
   height: 400px;
-  background: url('images.webp') no-repeat -1950px -10px;
-  width: 100%;
+  background: #FFF;
+  text-align: center;
+  padding-top: 40px;
   
   
 }
