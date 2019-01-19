@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0; 
+  box-sizing: border-box;
 }
 
 /*
@@ -26,6 +27,13 @@ FONTS
   font-style: normal;
   font-weight: 400;
   src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHPLeCFMIs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -55,7 +63,7 @@ padding: 1em 0;
 
 header nav{
   display:block;
-  width: 800px;
+  width: 700px;
   float: right;
   position: relative;
   top: 35px;
@@ -74,6 +82,7 @@ header nav a:link{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
+  font-size: .8em;
   
 }
 header nav a:visited{
@@ -100,20 +109,34 @@ header img{
 }
 
 
+
+
 #Welcome h1{
   font-family: 'Dosis', sans-serif;
   font-weight: extra-bold;
-  font-size: 3em;
+  font-size: 3.5em;
   text-transform: uppercase;
   color: #FFF;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 4px 4px 10px #000;
   text-align: center;
-  padding-top: 180px;
+  padding-top: 200px;
   letter-spacing: 3px;
   word-spacing: 5px;
 
 }
+#Welcome span{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #FFF;
+  text-shadow: 4px 4px 10px #000;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  padding-top: 40px;
 
+}
 
 #About-us{
  
