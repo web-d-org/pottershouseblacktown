@@ -63,10 +63,10 @@ padding: 1em 0;
 
 header nav{
   display:block;
-  width: 700px;
   float: right;
   position: relative;
   top: 35px;
+  right: 40px;
 }
 header nav:after{
   display:block;
@@ -114,7 +114,7 @@ header img{
 #Welcome h1{
   font-family: 'Dosis', sans-serif;
   font-weight: extra-bold;
-  font-size: 3.5em;
+  font-size: 3.8em;
   text-transform: uppercase;
   color: #FFF;
   text-shadow: 4px 4px 10px #000;
