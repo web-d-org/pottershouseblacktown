@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.wrapper{
+  width: 1140px;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: 0 auto;
+}
+
 /*
 ============================
 FONTS
@@ -46,7 +53,13 @@ Sprite Map Images
 #nav-logo{
   width: 245px;
   height: 85px;
-  background: url(images.webp) -1945px -874px;  
+  background: url(images.webp) no-repeat -1945px -874px;  
+}
+#pastor-rick-tina{
+  background: url('images.webp') no-repeat -10px -2949px;
+  width: 423px;
+  height: 439px; 
+  
 }
 
 
@@ -93,13 +106,17 @@ header img{
   left: 40px;
   
 }
-
-#Welcome{
+/*
+===========================
+HERO SECTION
+===========================
+*/
+#Hero{
  position: relative;
-  height: 600px;
+height: 600px;
 }
 
-#Welcome video{
+#Hero video{
   position: fixed;
   right: 0;
   bottom: 0;
@@ -108,10 +125,7 @@ header img{
   z-index:-1;
 }
 
-
-
-
-#Welcome h1{
+#Hero h1{
   font-family: 'Dosis', sans-serif;
   font-weight: extra-bold;
   font-size: 3.8em;
@@ -124,7 +138,7 @@ header img{
   word-spacing: 5px;
 
 }
-#Welcome span{
+#Hero span{
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
@@ -137,13 +151,88 @@ header img{
   padding-top: 40px;
 
 }
-
-#About-us{
- 
-  height: 400px;
-  background: #FFF;
+/*
+===========================
+Welcome SECTION
+===========================
+*/
+#Welcome{
+  background: RGBA(255,242,186,.6);
   text-align: center;
-  padding-top: 40px;
+  margin: auto;
+  height: 439px;
+  overflow: hidden;
   
+}
+
+#Welcome-container{
+  width: 60%;
+  margin: auto;
+  
+}
+
+#Welcome-left,
+#Welcome-right{
+ width: 50%;
+ float: left;
+
+}
+#Welcome-right:after{
+ content:"";
+ display: block;
+ clear:both;
+
+}
+
+#Welcome-right h1{
+    
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 8px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+
+}
+#Welcome-right p{
+  color: #000;
+  font-size: 1em;
+  line-height: 195%;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0 0 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#Welcome-link-left:link,
+#Welcome-link-right:link{
+  text-decoration: none;
+  color:#000;
+  
+}
+
+#Welcome-link-left:link{
+  float: left; 
+  position:relative;
+  left: 40px;
+  
+}
+#Welcome-link-right:link{
+  float: right; 
+  position:relative;
+  right: 40px;
+  
+}
+#Welcome-link-left:hover,
+#Welcome-link-right:hover{
+  color:#FFF;
+  
+}
+#Welcome-link-left:visited,
+#Welcome-link-right:visited{
+  text-decoration: none;
+  color:#000;
   
 }
