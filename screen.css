@@ -1,14 +1,99 @@
+/*
+============================
+Global
+============================
+*/
 * {
   padding: 0;
   margin: 0; 
   box-sizing: border-box;
 }
 
-.wrapper{
-  width: 1140px;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin: 0 auto;
+a{
+   transition: color 1s; 
+}
+/*
+============================
+Reused
+============================
+*/
+.global-container{
+  width: 940px;
+  height: 439px;
+  margin: auto;
+  
+}
+.global-container:after{
+  content:"";
+  display: block;
+  clear:both;
+  
+}
+.container-left,
+.container-right{
+ float: left;
+
+}
+.container-left{
+width: 423px;
+
+}
+.container-right{
+width: 517px;
+
+}
+.h1-global-container{ 
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 8px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+
+}
+.p-global-container{
+  color: #000;
+  font-size: 1em;
+  line-height: 185%;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: justify;
+  padding: 0 2em;
+  padding-bottom: 30px;
+}
+.global-link-left:link,
+.global-link-right:link{
+  text-decoration: none;
+  color:#000;
+  padding: 0 2em;
+  
+}
+
+.global-link-left{
+  float: left;
+  
+}
+.global-link-right{
+  float: right; 
+  
+}
+.global-link-centered{
+   text-decoration: none;
+   display: block;
+   text-align: center;
+  
+}
+a.global-link-left:hover,
+a.global-link-right:hover,
+a.global-link-centered:hover{
+  color:#969696;
+  
+}
+.global-link-left:visited,
+.global-link-right:visited,
+.global-link-centered:visited{
+  text-decoration: none;
+  color:#000;
 }
 
 /*
@@ -18,7 +103,6 @@ FONTS
 */
 
 /* ROBOTO*/
-/* latin */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -28,14 +112,6 @@ FONTS
 }
 
 /* DOSIS*/
-/* latin */
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 @font-face {
   font-family: 'Dosis';
   font-style: normal;
@@ -59,10 +135,55 @@ Sprite Map Images
   background: url('images.webp') no-repeat -10px -2949px;
   width: 423px;
   height: 439px; 
+
+/* First Slide show on website */
+}
+#slide-1-01 {
+  background: url('images.webp') no-repeat -1030px -2109px;
+	width: 507px;
+	height: 400px;
   
 }
-
-
+#slide-1-02{
+  background: url('images.webp') no-repeat -1557px -2109px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-03{
+  background: url('images.webp') no-repeat -2084px -2109px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-04{
+  background: url('images.webp') no-repeat -2611px -2109px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-05{
+  background: url('images.webp') no-repeat -10px -2529px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-06{
+  background: url('images.webp') no-repeat -537px -2529px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-07{
+  background: url('images.webp') no-repeat -1064px -2529px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-08{
+  background: url('images.webp') no-repeat -1591px -2529px;
+	width: 507px;
+	height: 400px;
+}
+#slide-1-09{
+  background: url('images.webp') no-repeat -2118px -2529px;
+	width: 507px;
+	height: 400px;
+}
 /*
 ===========================
 HEADER
@@ -165,74 +286,35 @@ Welcome SECTION
   
 }
 
-#Welcome-container{
-  width: 60%;
-  margin: auto;
+/*
+===========================
+About Us SECTION
+===========================
+*/
+
+
+#About-us{
+  background-color: #fff;
+  height: 690px;
+  overflow: auto;
+
+}
+
+#About-us-container{
+  margin-top: 170px;
+  border: 1px solid #000;
   
 }
-
-#Welcome-left,
-#Welcome-right{
- width: 50%;
- float: left;
-
+#About-us-container h1{
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
-#Welcome-right:after{
- content:"";
- display: block;
- clear:both;
-
-}
-
-#Welcome-right h1{
-    
-  display: block;
-  font-size: 2em;
-  font-weight: 700;
-  letter-spacing: 8px;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  text-align: center;
-
-}
-#Welcome-right p{
-  color: #000;
-  font-size: 1em;
-  line-height: 195%;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 0 0 30px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-#Welcome-link-left:link,
-#Welcome-link-right:link{
-  text-decoration: none;
-  color:#000;
+#About-us-right{
+   position: relative;
+   bottom: 80px;
+  left: 80px;
   
 }
-
-#Welcome-link-left:link{
-  float: left; 
-  position:relative;
-  left: 40px;
-  
-}
-#Welcome-link-right:link{
-  float: right; 
-  position:relative;
-  right: 40px;
-  
-}
-#Welcome-link-left:hover,
-#Welcome-link-right:hover{
-  color:#FFF;
-  
-}
-#Welcome-link-left:visited,
-#Welcome-link-right:visited{
-  text-decoration: none;
-  color:#000;
-  
-}
+.fadein { position:relative; height:332px; width:507px; background: #FFF;}
+.fadein img { position:absolute; left:0; top:0; transition:opacity 1s; opacity:1; }
+.fadein img.is-hidden { opacity:0; }
